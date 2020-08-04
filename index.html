@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recommended Calories</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="calories">
+      <h1>✨성인 하루 권장 칼로리 계산기✨</h1>
+
+      <div class="calories-height">
+        <label for="height">
+          자신의 키(cm) <strong id="user-height"></strong>
+        </label>
+        <input
+          type="range"
+          id="height"
+          list="height-list"
+          min="100"
+          max="210"
+        />
+        <datalist id="height-list">
+          <option value="100" label="100cm"></option>
+          <option value="110"></option>
+          <option value="120"></option>
+          <option value="130" label="130cm"></option>
+          <option value="140"></option>
+          <option value="150"></option>
+          <option value="160" label="160cm"></option>
+          <option value="170"></option>
+          <option value="180"></option>
+          <option value="190" label="190cm"></option>
+          <option value="200"></option>
+          <option value="120"></option>
+          <option value="210" label="210cm"></option>
+        </datalist>
+      </div>
+
+      <div class="calories-activity">
+        <label for="activity"
+          >자신의 활동지수 <strong id="user-activity"></strong
+        ></label>
+        <input
+          type="range"
+          id="activity"
+          list="activity-list"
+          min="25"
+          max="40"
+        />
+        <datalist id="activity-list">
+          <option value="25" label="25"></option>
+          <option value="30" label="30"></option>
+          <option value="35" label="35"></option>
+          <option value="40" label="40"></option>
+        </datalist>
+        <dl class="calories-activity-level">
+          <div>
+            <dt>
+              25
+            </dt>
+            <dd>
+              앉아서 주로 생활하거나 매일 가벼운 움직임만 하며 활동량이 적은
+              경우
+            </dd>
+          </div>
+          <div>
+            <dt>
+              30~35
+            </dt>
+            <dd>
+              규칙적인 생활로 보통의 활동량을 가진 경우
+            </dd>
+          </div>
+          <div>
+            <dt>
+              40
+            </dt>
+            <dd>
+              육체노동 등 평소 신체 활동량이 많은 경우
+            </dd>
+          </div>
+        </dl>
+      </div>
+      <div class="calories-result">
+        <p>당신의 하루 권장 칼로리는 <strong></strong> 입니다</p>
+      </div>
+    </div>
+  </body>
+</html>

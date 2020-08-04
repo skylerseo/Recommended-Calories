@@ -1,0 +1,93 @@
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'SpoqaHanSans';
+  font-size: 16px;
+  line-height: 1.5;
+  color: #313131;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #c5b2cc;
+}
+
+.calories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.calories h1 {
+  padding-bottom: 30px;
+}
+.calories:hover {
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.4);
+  transition: box-shadow 250ms ease-in;
+}
+.calories-height label,
+.calories-activity label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calories-height input,
+.calories-activity input {
+  background-color: violet;
+}
+.calories-height,
+.calories-activity {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.calories-activity-level {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.calories-activity-level div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgb(255, 242, 244);
+}
+.calories-activity-level div:hover {
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 250ms ease-in;
+}
+.calories-activity-level dt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bolder;
+  color: #d30082;
+  width: 25%;
+}
+.calories-activity-level dd {
+  font-size: smaller;
+}
+.calories-result {
+  padding: 30px;
+}
